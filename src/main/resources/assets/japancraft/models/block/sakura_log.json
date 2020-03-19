@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "japancraft:blocks/sakura_log_top",
+    "side": "japancraft:blocks/sakura_log"
+  }
+}

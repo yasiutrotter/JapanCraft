@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "japancraft:block/sakura_slab" },
+    "type=top": { "model": "japancraft:block/sakura_slab_top" },
+    "type=double": { "model": "japancraft:block/sakura_planks" }
+  }
+}

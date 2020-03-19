@@ -1,0 +1,34 @@
+
+modLoader="javafml" #mandatory
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+issueTrackerURL="http://vnqu.ml/" #optional
+[[mods]] #mandatory
+modId="japancraft" #mandatory
+version="1.0" #mandatory
+displayName="Japan Craft" #mandatory
+updateJSONURL="http://vnqu.ml/" #optional
+displayURL="http://vnqu.ml/" #optional
+logoFile="logo.png" #optional
+credits="Thanks for this mod goes to Java and IntelliJ" #optional
+authors="vnqu" #optional
+description='''
+Hello,
+This is my first mod to Minecraft. It adds a lot of new items Japan related such as food, items, weapons, armors and bioms. If you see any issue with the mod, just DM me on discord - jvsiu#6866.
+Thanks, enjoy!
+'''
+
+
+
+
+[[dependencies.japancraft]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[31,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.japancraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

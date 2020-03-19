@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "japancraft:blocks/sakura_planks",
+    "top": "japancraft:blocks/sakura_planks",
+    "side": "japancraft:blocks/sakura_planks"
+  }
+}

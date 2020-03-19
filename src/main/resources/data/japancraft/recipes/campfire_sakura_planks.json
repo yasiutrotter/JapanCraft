@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " / ",
+    "/C/",
+    "JJJ"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    },
+    "J": {
+      "item": "japancraft:sakura_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:campfire",
+    "count": 1
+  }
+}

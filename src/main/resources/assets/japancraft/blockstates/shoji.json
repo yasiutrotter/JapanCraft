@@ -1,0 +1,8 @@
+{
+    "variants": {
+      "facing=north": { "model": "japancraft:block/shoji" },
+      "facing=south": { "model": "japancraft:block/shoji", "y": 180 },
+      "facing=west": { "model": "japancraft:block/shoji", "y": 270 },
+      "facing=east": { "model": "japancraft:block/shoji", "y": 90 }
+    }
+}
