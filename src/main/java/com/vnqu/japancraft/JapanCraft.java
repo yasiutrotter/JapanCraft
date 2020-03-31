@@ -1,9 +1,15 @@
 package com.vnqu.japancraft;
 
 import com.vnqu.japancraft.init.BlockInit;
+import com.vnqu.japancraft.init.ItemInit;
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.RenderState;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,10 +27,9 @@ public class JapanCraft {
     public static JapanCraft instance;
 
 
-    public JapanCraft()
-    {
+    public JapanCraft() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetupEvent);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
@@ -35,9 +40,15 @@ public class JapanCraft {
 
     }
 
-    private void doClientStuff(final FMLClientSetupEvent event)
+    @SubscribeEvent
+    public void onClientSetupEvent(final FMLClientSetupEvent event)
     {
+        renderCutout(BlockInit.sakura_sapling.getBlock());
+    }
 
+    public static void renderCutout(Block block)
+    {
+        RenderTypeLookup.setRenderLayer(block, RenderType.func_228633_a_());
     }
 
     private void onServerStarting(FMLServerStartingEvent event)
@@ -45,12 +56,11 @@ public class JapanCraft {
 
     }
 
-    public static class JapanCraftBlocksGroup extends ItemGroup
-    {
+
+    public static class JapanCraftBlocksGroup extends ItemGroup {
         public static final JapanCraftBlocksGroup instance = new JapanCraftBlocksGroup(ItemGroup.GROUPS.length, "japancraftblocktab");
 
-        private JapanCraftBlocksGroup(int index, String label)
-        {
+        private JapanCraftBlocksGroup(int index, String label) {
             super(index, label);
         }
 

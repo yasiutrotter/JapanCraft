@@ -1,8 +1,8 @@
 package com.vnqu.japancraft.init;
 
         import com.vnqu.japancraft.JapanCraft;
+        import net.minecraft.item.Food;
         import net.minecraft.item.Item;
-        import net.minecraft.item.ItemGroup;
         import net.minecraftforge.event.RegistryEvent;
         import net.minecraftforge.eventbus.api.SubscribeEvent;
         import net.minecraftforge.fml.common.Mod;
@@ -12,11 +12,13 @@ package com.vnqu.japancraft.init;
 @ObjectHolder(JapanCraft.MOD_ID)
 public class ItemInit
 {
-    public static final Item rice = null;
+    //public static final Item nori_leaf = null;
+    //public static final Item cherry = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("rice"));
+        //event.getRegistry().register(new Item(new Item.Properties().group(JapanCraft.JapanCraftFoodGroup.instance)).setRegistryName("nori_leaf"));
+        //event.getRegistry().register(new Item(new Item.Properties().group(JapanCraft.JapanCraftFoodGroup.instance).food(new Food.Builder().hunger())));
     }
 }
