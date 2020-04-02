@@ -1,6 +1,3 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "block/birch_sapling"
-  }
+  "parent": "japancraft:block/sakura_sapling"
 }

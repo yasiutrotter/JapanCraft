@@ -43,18 +43,19 @@ public class JapanCraft {
     @SubscribeEvent
     public void onClientSetupEvent(final FMLClientSetupEvent event)
     {
-        renderCutout(BlockInit.sakura_sapling.getBlock());
+        renderCutout(BlockInit.sakura_sapling);
     }
 
     public static void renderCutout(Block block)
     {
-        RenderTypeLookup.setRenderLayer(block, RenderType.func_228633_a_());
+        RenderTypeLookup.setRenderLayer(BlockInit.sakura_sapling, RenderType.getCutout());
     }
 
     private void onServerStarting(FMLServerStartingEvent event)
     {
 
     }
+
 
 
     public static class JapanCraftBlocksGroup extends ItemGroup {

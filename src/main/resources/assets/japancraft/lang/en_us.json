@@ -1,13 +1,14 @@
 {
+  "item.japancraft.nori_leaf": "Nori Leaf",
   "item.japancraft.rice": "Rice",
 
   "block.japancraft.sakura_log": "Sakura Log",
   "block.japancraft.sakura_leaves": "Sakura Leaves",
   "block.japancraft.sakura_planks": "Sakura Planks",
+  "block.japancraft.sakura_slab": "Sakura Slab",
   "block.japancraft.sakura_stairs": "Sakura Stairs",
   "block.japancraft.sakura_sapling": "Sakura Sapling",
   "block.japancraft.shoji": "Shoji",
 
-  "itemGroup.japancraft.japancraftblocktab": "Japan Craft - Blocks",
-  "itemGroup.japancraft.japancraftfoodtab": "Japan Craft - Food"
+  "itemGroup.japancraftblocktab": "Japan Craft - Blocks"
 }
