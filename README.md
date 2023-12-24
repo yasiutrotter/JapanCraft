@@ -1,16 +1,10 @@
 # Japan Craft
 
-Japancraft is my first Java project. It's basic mod to Minecraft 1.15.2 that adds Japan related items, blocks and food.
+Java project created to learn language. Japan Craft is Minecraft modification for version 1.15.2. It's not game-ready and will not be continued. I treat it as archive.
 
 ## Download
 
 https://www.curseforge.com/minecraft/mc-mods/japancraft
-
-
-## Contact
-If you see any issue or problem in mod, dm me on discord:
-jvsiu#6866 or http://vnqu.ml
-
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
